@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "prezip": "rm hotel-popup.zip",
+    "zip": "zip hotel-popup.zip -r app"
+  }
+}

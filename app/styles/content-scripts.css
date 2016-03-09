@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+:root body {
+  padding: 0;
+  margin: 0;
+}
+
+:root table {
+  max-width: none;
+}
+
+:root tr {
+  transition: .16s linear;
+}
+
+:root tr:hover {
+  background: hsla(0, 0%, 0%, .04);
+}
+
+:root .details > a,
+:root .actions {
+  padding: .5em 1em;
+}
+
+:root .details > a {
+  display: block;
+  font-weight: bold;
+}
+
+:root .details .status {
+  font-weight: normal;
+}
+
+:root footer {
+  display: none;
+}
