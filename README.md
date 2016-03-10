@@ -4,4 +4,4 @@ Chrome extension that to popup the [hotel](https://github.com/typicode/hotel)
 
 ## install
 
-[From here](https://chrome.google.com/webstore/detail/enfhnnjmlnaalebjdhhohjffpggmeaio/publish-delayed?hl=ja)
+[From here](https://chrome.google.com/webstore/detail/hotel-popup/enfhnnjmlnaalebjdhhohjffpggmeaio)
