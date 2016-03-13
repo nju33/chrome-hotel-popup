@@ -1,16 +1,18 @@
 'use strict';
 
-wait((linkCollection) => {
-  const actionCollection = document.querySelectorAll('.actions');
+if (location.host === 'localhost:2000') {
+  wait((linkCollection) => {
+    const actionCollection = document.querySelectorAll('.actions');
 
-  toArr(linkCollection).forEach((item) => {
-    item.addEventListener('click', handleLinkClick);
-  });
+    toArr(linkCollection).forEach((item) => {
+      item.addEventListener('click', handleLinkClick);
+    });
 
-  toArr(actionCollection).forEach((item) => {
-    item.addEventListener('click', handleActionsClick);
+    toArr(actionCollection).forEach((item) => {
+      item.addEventListener('click', handleActionsClick);
+    });
   });
-});
+}
 
 function wait(cb) {
   let id = null;
