@@ -1,6 +1,7 @@
 'use strict';
 
 if (location.host === 'localhost:2000') {
+  insertStyle(chrome.runtime.getURL('styles/content-scripts.css'));
   wait((linkCollection) => {
     const actionCollection = document.querySelectorAll('.actions');
 
@@ -12,6 +13,13 @@ if (location.host === 'localhost:2000') {
       item.addEventListener('click', handleActionsClick);
     });
   });
+}
+
+function insertStyle(url) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = url;
+  document.head.appendChild(link);
 }
 
 function wait(cb) {
