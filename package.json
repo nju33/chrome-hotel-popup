@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "prezip": "rm hotel-popup.zip",
+    "prezip": "if [ -e hotel-popup.zip ]; then rm hotel-popup.zip; fi",
     "zip": "zip hotel-popup.zip -r app"
   }
 }
