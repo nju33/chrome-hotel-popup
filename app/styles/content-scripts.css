@@ -13,6 +13,10 @@
   transition: .16s linear;
 }
 
+:root tr:first-child {
+  border-top: none;
+}
+
 :root tr:hover {
   background: hsla(0, 0%, 0%, .04);
 }
@@ -23,6 +27,8 @@
 }
 
 :root .details > a {
+  position: relative;
+  z-index: 999;
   display: block;
   font-weight: bold;
 }
